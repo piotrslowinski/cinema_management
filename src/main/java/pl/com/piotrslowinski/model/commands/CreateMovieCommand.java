@@ -63,4 +63,13 @@ public class CreateMovieCommand implements Command {
     public void setLength(Integer length) {
         this.length = length;
     }
+
+    public void validate(Validatable.ValidationErrors errors) {
+        validatePresence(errors, "title", title);
+        validatePresence(errors, "description", description);
+        validatePresence(errors, "actors", actors);
+        validatePresence(errors, "genres", genres);
+        validatePresence(errors, "minAge", minAge);
+        validatePresence(errors, "length", length);
+    }
 }

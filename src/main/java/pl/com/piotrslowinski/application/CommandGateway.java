@@ -3,6 +3,8 @@ package pl.com.piotrslowinski.application;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 import pl.com.piotrslowinski.model.commands.Command;
+import pl.com.piotrslowinski.model.commands.InvalidCommandException;
+import pl.com.piotrslowinski.model.commands.Validatable;
 
 import java.util.Map;
 import java.util.Optional;
@@ -24,7 +26,10 @@ public class CommandGateway {
     }
 
     private  void validate(Command command){
-       //TODO =
+        Validatable.ValidationErrors validationErrors = new Validatable.ValidationErrors();
+        command.validate(validationErrors);
+        if(!validationErrors.isValid())
+            throw new InvalidCommandException(validationErrors);
     }
 
     private Handler handlerFor(Command command){

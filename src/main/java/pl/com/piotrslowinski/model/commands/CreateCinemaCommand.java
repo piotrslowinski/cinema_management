@@ -19,4 +19,9 @@ public class CreateCinemaCommand implements Command {
     public void setCity(String city) {
         this.city = city;
     }
+
+    public void validate(Validatable.ValidationErrors errors){
+        validatePresence(errors, "name", name);
+        validatePresence(errors, "city", city);
+    }
 }
