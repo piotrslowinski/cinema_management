@@ -1,0 +1,9 @@
+pl\com\piotrslowinski\application\CreateCinemaHandler.class
+pl\com\piotrslowinski\infrastructure\JPACinemaRepository.class
+pl\com\piotrslowinski\model\commands\CreateCinemaCommand.class
+pl\com\piotrslowinski\ui\CinemaController.class
+pl\com\piotrslowinski\model\Cinema.class
+pl\com\piotrslowinski\model\commands\Command.class
+pl\com\piotrslowinski\model\repositories\CinemaRepository.class
+pl\com\piotrslowinski\model\Cinema_.class
+pl\com\piotrslowinski\CinemaApp.class

@@ -1,0 +1,8 @@
+C:\Java\cinema_management\src\main\java\pl\com\piotrslowinski\CinemaApp.java
+C:\Java\cinema_management\src\main\java\pl\com\piotrslowinski\application\CreateCinemaHandler.java
+C:\Java\cinema_management\src\main\java\pl\com\piotrslowinski\model\commands\CreateCinemaCommand.java
+C:\Java\cinema_management\src\main\java\pl\com\piotrslowinski\model\Cinema.java
+C:\Java\cinema_management\src\main\java\pl\com\piotrslowinski\model\commands\Command.java
+C:\Java\cinema_management\src\main\java\pl\com\piotrslowinski\infrastructure\JPACinemaRepository.java
+C:\Java\cinema_management\src\main\java\pl\com\piotrslowinski\model\repositories\CinemaRepository.java
+C:\Java\cinema_management\src\main\java\pl\com\piotrslowinski\ui\CinemaController.java
