@@ -25,6 +25,6 @@ public class JPACinemaRepository implements CinemaRepository {
         Cinema cinema = entityManager.find(Cinema.class, id);
         if (cinema == null)
             throw new NoSuchEntityException();
-        return null;
+        return cinema;
     }
 }

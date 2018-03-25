@@ -1,6 +1,7 @@
 package pl.com.piotrslowinski.model;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -26,6 +27,9 @@ public class Movie {
     private Integer minAge;
 
     private Integer length;
+
+    @OneToMany
+    private Set<Show> shows = new HashSet<>();
 
     public Movie(String title, String description, Set<String> actors, Set<String> genres, Integer minAge, Integer length) {
         this.title = title;
