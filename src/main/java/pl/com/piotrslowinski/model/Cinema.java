@@ -29,4 +29,7 @@ public class Cinema {
         this.city = city;
     }
 
+    public Long getId() {
+        return id;
+    }
 }
