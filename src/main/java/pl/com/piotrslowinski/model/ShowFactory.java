@@ -1,5 +1,6 @@
 package pl.com.piotrslowinski.model;
 
+import org.springframework.stereotype.Component;
 import pl.com.piotrslowinski.model.commands.CreateShowsCommand;
 import pl.com.piotrslowinski.model.repositories.CinemaRepository;
 import pl.com.piotrslowinski.model.repositories.MovieRepository;
@@ -10,6 +11,7 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.Set;
 
+@Component
 public class ShowFactory {
 
     private CinemaRepository cinemaRepository;

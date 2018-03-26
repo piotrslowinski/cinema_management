@@ -3,8 +3,10 @@ package pl.com.piotrslowinski.ui;
 import org.springframework.web.bind.annotation.*;
 import pl.com.piotrslowinski.application.CinemaDto;
 import pl.com.piotrslowinski.application.CinemaFinder;
+import pl.com.piotrslowinski.application.CommandGateway;
 import pl.com.piotrslowinski.application.CreateCinemaHandler;
 import pl.com.piotrslowinski.model.commands.CreateCinemaCommand;
+import pl.com.piotrslowinski.model.commands.CreateShowsCommand;
 
 import java.util.List;
 
@@ -12,17 +14,23 @@ import java.util.List;
 @RequestMapping("/cinemas")
 public class CinemaController {
 
-    private CreateCinemaHandler handler;
+    private CommandGateway gateway;
     private CinemaFinder cinemaFinder;
 
-    public CinemaController(CreateCinemaHandler handler, CinemaFinder cinemaFinder) {
-        this.handler = handler;
+    public CinemaController(CommandGateway gateway, CinemaFinder cinemaFinder) {
+        this.gateway = gateway;
         this.cinemaFinder = cinemaFinder;
     }
 
     @PutMapping
     public void create(@RequestBody CreateCinemaCommand cmd){
-        handler.handle(cmd);
+        gateway.execute(cmd);
+    }
+
+    @PutMapping("/{cinemaId}/shows")
+    public void createShows(@PathVariable Long cinemaId, @RequestBody CreateShowsCommand cmd){
+        cmd.setCinemaId(cinemaId);
+        gateway.execute(cmd);
     }
 
     @GetMapping

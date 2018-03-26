@@ -29,6 +29,7 @@ public class Movie {
     private Integer length;
 
     @OneToMany
+    @JoinColumn(name = "movie_id")
     private Set<Show> shows = new HashSet<>();
 
     public Movie(String title, String description, Set<String> actors, Set<String> genres, Integer minAge, Integer length) {
@@ -38,5 +39,8 @@ public class Movie {
         this.genres = genres;
         this.minAge = minAge;
         this.length = length;
+    }
+
+    public Movie() {
     }
 }

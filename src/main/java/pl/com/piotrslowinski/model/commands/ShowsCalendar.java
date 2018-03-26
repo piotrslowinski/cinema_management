@@ -1,16 +1,19 @@
 package pl.com.piotrslowinski.model.commands;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Set;
 
 public class ShowsCalendar {
 
-    LocalDateTime fromDate, untilDate;
+    @JsonFormat(pattern = "yyyy/MM/dd HH:mm")
+    private LocalDateTime fromDate, untilDate;
 
-    Set<String> weekDays;
+    private Set<String> weekDays;
 
-    Set<LocalTime> hours;
+    private Set<LocalTime> hours;
 
     public LocalDateTime getFromDate() {
         return fromDate;
