@@ -2,7 +2,7 @@ package pl.com.piotrslowinski.model.repositories;
 
 import pl.com.piotrslowinski.model.Show;
 
-public interface ShowRepository {
+public interface ShowRepository extends Repository<Show> {
 
-    void save(Show show);
+
 }
