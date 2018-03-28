@@ -15,7 +15,7 @@ public class Movie {
 
     private String title;
 
-    private String descripton;
+    private String description;
 
     @ElementCollection(fetch = FetchType.EAGER)
     private Set<String> actors;
@@ -34,7 +34,7 @@ public class Movie {
 
     public Movie(String title, String description, Set<String> actors, Set<String> genres, Integer minAge, Integer length) {
         this.title = title;
-        this.descripton = description;
+        this.description = description;
         this.actors = actors;
         this.genres = genres;
         this.minAge = minAge;
@@ -46,5 +46,33 @@ public class Movie {
 
     public Long getId() {
         return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public Set<String> getActors() {
+        return actors;
+    }
+
+    public Set<String> getGenres() {
+        return genres;
+    }
+
+    public Integer getMinAge() {
+        return minAge;
+    }
+
+    public Integer getLength() {
+        return length;
+    }
+
+    public Set<Show> getShows() {
+        return shows;
     }
 }
