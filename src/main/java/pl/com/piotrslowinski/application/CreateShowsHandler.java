@@ -8,7 +8,7 @@ import pl.com.piotrslowinski.model.commands.CreateShowsCommand;
 import pl.com.piotrslowinski.model.repositories.ShowRepository;
 
 @Component
-public class CreateShowsHandler implements Handler<CreateShowsCommand> {
+public class CreateShowsHandler implements Handler<CreateShowsCommand, Void> {
 
     private ShowRepository showRepository;
     private ShowFactory showFactory;
@@ -20,8 +20,9 @@ public class CreateShowsHandler implements Handler<CreateShowsCommand> {
 
     @Transactional
     @Override
-    public void handle(CreateShowsCommand command) {
+    public Void handle(CreateShowsCommand command) {
         showFactory.createShows(command).stream().forEach(show -> showRepository.save(show));
+        return null;
     }
 
     @Override

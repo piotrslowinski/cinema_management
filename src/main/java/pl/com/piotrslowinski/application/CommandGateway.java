@@ -19,10 +19,10 @@ public class CommandGateway {
         this.applicationContext = applicationContext;
     }
 
-    public void execute(Command command){
+    public <T> T execute(Command command){
         validate(command);
         Handler handler = handlerFor(command);
-        handler.handle(command);
+        return (T)handler.handle(command);
     }
 
     private  void validate(Command command){

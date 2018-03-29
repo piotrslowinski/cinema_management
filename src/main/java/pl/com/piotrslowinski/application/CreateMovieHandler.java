@@ -8,7 +8,7 @@ import pl.com.piotrslowinski.model.commands.CreateMovieCommand;
 import pl.com.piotrslowinski.model.repositories.MovieRepository;
 
 @Component
-public class CreateMovieHandler implements Handler<CreateMovieCommand> {
+public class CreateMovieHandler implements Handler<CreateMovieCommand, Void> {
 
     private MovieRepository movieRepository;
 
@@ -17,9 +17,10 @@ public class CreateMovieHandler implements Handler<CreateMovieCommand> {
     }
 
     @Transactional
-    public void handle(CreateMovieCommand cmd){
+    public Void handle(CreateMovieCommand cmd){
         movieRepository.save(new Movie(cmd.getTitle(), cmd.getDescription(), cmd.getActors(),
                 cmd.getGenres(), cmd.getMinAge(), cmd.getLength()));
+        return null;
     }
 
     @Override

@@ -8,7 +8,7 @@ import pl.com.piotrslowinski.model.commands.CreateCinemaCommand;
 import pl.com.piotrslowinski.model.repositories.CinemaRepository;
 
 @Component
-public class CreateCinemaHandler implements Handler<CreateCinemaCommand> {
+public class CreateCinemaHandler implements Handler<CreateCinemaCommand, Void> {
 
     private CinemaRepository cinemaRepository;
 
@@ -18,8 +18,9 @@ public class CreateCinemaHandler implements Handler<CreateCinemaCommand> {
     }
 
     @Transactional
-   public void handle(CreateCinemaCommand cmd){
+   public Void handle(CreateCinemaCommand cmd){
         cinemaRepository.save(new Cinema(cmd.getName(), cmd.getCity()));
+        return null;
    }
 
     @Override

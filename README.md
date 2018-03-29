@@ -101,13 +101,13 @@ Used technologies:
 
 5. As a customer You can see movies available on a given day, so that You can pick up a movie and buy tickets
 
-	*GET/cinemas/:cinemaId/movies?date=YYYY/MM/dd
+	*GET/cinemas/:cinemaId/movies?date=YYYY/MM/dd*
 	
 	
 6. As an admin You can define shows pricing, so that users now how much they have to pay for the tickets
 	(one movie has the same price of shows in every city, if you put price again you'll overwrite old prices with new).
 	
-	*PUT/movies/:movieId/prices
+	*PUT/movies/:movieId/prices*
 	
 ...
 	

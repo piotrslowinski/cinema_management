@@ -8,7 +8,7 @@ import pl.com.piotrslowinski.model.commands.SetTicketPricesCommand;
 import pl.com.piotrslowinski.model.repositories.MovieRepository;
 
 @Component
-public class SetTicketPricesHandler implements Handler<SetTicketPricesCommand> {
+public class SetTicketPricesHandler implements Handler<SetTicketPricesCommand, Void> {
 
     private MovieRepository movieRepository;
 
@@ -18,11 +18,11 @@ public class SetTicketPricesHandler implements Handler<SetTicketPricesCommand> {
 
     @Transactional
     @Override
-    public void handle(SetTicketPricesCommand cmd) {
+    public Void handle(SetTicketPricesCommand cmd) {
         Movie movie = movieRepository.get(cmd.getMovieId());
         movie.setPrices(cmd);
         movieRepository.save(movie);
-
+        return null;
     }
 
     @Override
