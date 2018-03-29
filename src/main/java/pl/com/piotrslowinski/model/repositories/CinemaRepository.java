@@ -7,4 +7,6 @@ public interface CinemaRepository extends Repository<Cinema> {
     void save(Cinema cinema);
 
     Cinema get(Long id);
+
+    boolean isCinemaPresent(String name, String city);
 }

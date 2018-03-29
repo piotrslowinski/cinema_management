@@ -118,3 +118,36 @@ Used technologies:
 			"children": 999.99
 		}
 ...
+
+7. As a customer You can make a reservation, so that You can purchase the tickets online or onsite
+
+	*PUT/reservations*
+	
+...
+	
+	{
+		"showId":1,
+		"ticekts": [
+			{
+			"kind": "regular",
+			"count": 2
+			},
+			{
+			"kind": "school",
+			"count": 1
+			}
+		],
+		"seats": [
+			{"row": 5, "seat": 10},
+			{"row": 5, "seat": 11},
+			{"row": 5, "seat": 12}
+		],
+		"customer": {
+			"firstName": "John",
+			"lastName": "Doe",
+			"email": "john.doe@test.com",
+			"phone": "99999999999"
+		}
+	}
+	
+...

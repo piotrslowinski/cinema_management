@@ -24,7 +24,7 @@ public class Reservation {
     @ElementCollection
     private Set<Seat> seats;
 
-    @Enumerated
+    @Enumerated(EnumType.STRING)
     private ReservationStatus reservationStatus;
 
     public Reservation() {
