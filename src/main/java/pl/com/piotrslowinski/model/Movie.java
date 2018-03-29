@@ -1,5 +1,7 @@
 package pl.com.piotrslowinski.model;
 
+import pl.com.piotrslowinski.model.commands.SetTicketPricesCommand;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.List;
@@ -31,6 +33,9 @@ public class Movie {
     @OneToMany
     @JoinColumn(name = "movie_id")
     private Set<Show> shows = new HashSet<>();
+
+    @Embedded
+    private TicketPrices ticketPrices;
 
     public Movie(String title, String description, Set<String> actors, Set<String> genres, Integer minAge, Integer length) {
         this.title = title;
@@ -74,5 +79,14 @@ public class Movie {
 
     public Set<Show> getShows() {
         return shows;
+    }
+
+    public void setPrices(SetTicketPricesCommand cmd) {
+        if(ticketPrices != null){
+            ticketPrices.setPrices(cmd.getPrices());
+        } else {
+            ticketPrices = new TicketPrices(cmd.getPrices());
+        }
+
     }
 }

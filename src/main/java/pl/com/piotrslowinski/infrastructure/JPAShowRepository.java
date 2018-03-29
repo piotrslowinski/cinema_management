@@ -10,5 +10,5 @@ import javax.persistence.EntityManager;
 @Component
 public class JPAShowRepository extends GenericJPARepository<Show> implements ShowRepository {
 
-   
+
 }
