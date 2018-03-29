@@ -19,7 +19,7 @@ public class ReservationController {
         this.gateway = gateway;
     }
 
-    @PutMapping("/reservation")
+    @PutMapping("/reservations")
     public ReservationNumberDto create(@RequestBody CreateReservationCommand cmd){
         ReservationNumberDto reservationNumber = gateway.execute(cmd);
         return reservationNumber;

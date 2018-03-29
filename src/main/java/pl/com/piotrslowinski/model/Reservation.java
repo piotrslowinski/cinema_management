@@ -1,5 +1,7 @@
 package pl.com.piotrslowinski.model;
 
+import pl.com.piotrslowinski.model.commands.CreateReservationCommand;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -28,6 +30,13 @@ public class Reservation {
     public Reservation() {
     }
 
+    public Reservation(CreateReservationCommand cmd) {
+        this.showId = cmd.getShowId();
+        Customer = cmd.getCustomer();
+        this.tickets = cmd.getTickets();
+        this.seats = cmd.getSeats();
+        this.reservationStatus = ReservationStatus.PENDING;
+    }
 
     public Long getId() {
         return id;

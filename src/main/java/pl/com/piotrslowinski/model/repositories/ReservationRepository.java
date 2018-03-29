@@ -7,4 +7,5 @@ import java.util.Set;
 public interface ReservationRepository extends Repository<Reservation> {
 
 
+    Set<Reservation> getReservations(Long showId);
 }
