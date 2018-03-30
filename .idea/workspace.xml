@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86d5fd9f-e77d-420b-b2ee-b75e5025dea7" name="Default" comment="CreateCinemaTest refa">
+    <list default="true" id="86d5fd9f-e77d-420b-b2ee-b75e5025dea7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AddMovieTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateCinemaCommand.java" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateCinemaCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/MovieFinder.java" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/MovieFinder.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPQLMovieFinder.java" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPQLMovieFinder.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/CreateCinemaTest.java" afterPath="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/CreateCinemaTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/com/piotrslowinski/application/CreateCinemaHandler.class" afterPath="$PROJECT_DIR$/target/classes/pl/com/piotrslowinski/application/CreateCinemaHandler.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/com/piotrslowinski/infrastructure/JPACinemaRepository.class" afterPath="$PROJECT_DIR$/target/classes/pl/com/piotrslowinski/infrastructure/JPACinemaRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/com/piotrslowinski/model/repositories/CinemaRepository.class" afterPath="$PROJECT_DIR$/target/classes/pl/com/piotrslowinski/model/repositories/CinemaRepository.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AcceptanceTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AcceptanceTest.java">
+      <file leaf-file-name="CreateCinemaTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/CreateCinemaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="208">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,14 +31,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateCinemaTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/CreateCinemaTest.java">
+      <file leaf-file-name="AddMovieTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AddMovieTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="72" column="4" lean-forward="false" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+            <state relative-caret-position="191">
+              <caret line="51" column="58" lean-forward="false" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JPQLMovieFinder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPQLMovieFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieFinder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/MovieFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,32 +123,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateCinemaHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/CreateCinemaHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-              <folding>
-                <element signature="e#1417#1418#0" expanded="true" />
-                <element signature="e#1465#1466#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JPACinemaRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPACinemaRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -157,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateMovieCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateShowsCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/converter/LocalDateAttributeConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/converter/LocalDateTimeAttributeConverter.java" />
@@ -168,12 +160,10 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Cinema.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/domain/ShowFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/ShowDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/MovieFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/ui/CinemaController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPAMovieFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/MovieDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/ui/ShowController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPQLMovieFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/ReservationStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Ticket.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Seat.java" />
@@ -208,6 +198,9 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPACinemaRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateCinemaCommand.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/CreateCinemaTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/MovieFinder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPQLMovieFinder.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AddMovieTest.java" />
       </list>
     </option>
   </component>
@@ -487,7 +480,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CreateCinemaTest.shouldNotAllowToPersistEmptyParametersAtCinema">
+  <component name="RunManager" selected="JUnit.AddMovieTest.shouldAddMovie">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -508,6 +501,31 @@
       <module name="" />
       <envs />
     </configuration>
+    <configuration name="AddMovieTest.shouldAddMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="pl.com.piotrslowinski.acceptance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="cinema_management" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pl.com.piotrslowinski.acceptance" />
+      <option name="MAIN_CLASS_NAME" value="pl.com.piotrslowinski.acceptance.AddMovieTest" />
+      <option name="METHOD_NAME" value="shouldAddMovie" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="CreateCinemaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -522,31 +540,6 @@
       <option name="MAIN_CLASS_NAME" value="pl.com.piotrslowinski.acceptance.CreateCinemaTest" />
       <option name="METHOD_NAME" value="shouldNotAllowToPersistTheSameCinemaTwice" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="CreateCinemaTest.shouldCreateCinema" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="pl.com.piotrslowinski.acceptance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="cinema_management" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.com.piotrslowinski.acceptance" />
-      <option name="MAIN_CLASS_NAME" value="pl.com.piotrslowinski.acceptance.CreateCinemaTest" />
-      <option name="METHOD_NAME" value="shouldCreateCinema" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -694,19 +687,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldCreateCinema" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldNotAllowToPersistTheSameCinemaTwice" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldSaveCinemasAsList" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldNotAllowToPersistEmptyParametersAtCinema" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldNotAllowToPersistTheSameCinemaTwice" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldSaveCinemasAsList" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldNotAllowToPersistEmptyParametersAtCinema" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AddMovieTest.shouldAddMovie" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldNotAllowToPersistEmptyParametersAtCinema" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldSaveCinemasAsList" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldNotAllowToPersistTheSameCinemaTwice" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldCreateCinema" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AddMovieTest.shouldAddMovie" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldNotAllowToPersistEmptyParametersAtCinema" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldSaveCinemasAsList" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldNotAllowToPersistTheSameCinemaTwice" />
       </list>
     </recent_temporary>
   </component>
@@ -829,10 +822,29 @@
       <option name="project" value="LOCAL" />
       <updated>1522351086289</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="CreateCinemaTest refactor">
+      <created>1522387389320</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1522387389320</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="AddMovieTest_shouldAddMovie - 2018.03.30 at 07h 34m 41s.xml">
+      <configuration name="AddMovieTest.shouldAddMovie" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddMovieTest_shouldAddMovie - 2018.03.30 at 07h 35m 18s.xml">
+      <configuration name="AddMovieTest.shouldAddMovie" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddMovieTest_shouldAddMovie - 2018.03.30 at 07h 35m 44s.xml">
+      <configuration name="AddMovieTest.shouldAddMovie" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddMovieTest_shouldAddMovie - 2018.03.30 at 07h 38m 50s.xml">
+      <configuration name="AddMovieTest.shouldAddMovie" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="CreateCinemaTest - 2018.03.30 at 06h 44m 21s.xml">
       <configuration name="CreateCinemaTest" configurationId="JUnit" />
     </history-entry>
@@ -851,18 +863,6 @@
     <history-entry file="CreateCinemaTest_shouldSaveCinemasAsList - 2018.03.30 at 06h 43m 50s.xml">
       <configuration name="CreateCinemaTest.shouldSaveCinemasAsList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShowFactoryTest_shouldCreateShowWithCalendar - 2018.03.26 at 16h 04m 34s.xml">
-      <configuration name="ShowFactoryTest.shouldCreateShowWithCalendar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShowFactoryTest_shouldCreateShowWithCalendar - 2018.03.26 at 16h 05m 06s.xml">
-      <configuration name="ShowFactoryTest.shouldCreateShowWithCalendar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShowFactoryTest_shouldCreateShowWithCalendar - 2018.03.26 at 16h 05m 27s.xml">
-      <configuration name="ShowFactoryTest.shouldCreateShowWithCalendar" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShowFactoryTest_shouldCreateShowWithoutCalendar - 2018.03.26 at 16h 04m 04s.xml">
-      <configuration name="ShowFactoryTest.shouldCreateShowWithoutCalendar" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -876,7 +876,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -915,7 +915,8 @@
     <MESSAGE value="generic R Handle method refactored" />
     <MESSAGE value="CreateReservationHandler works but reservation details are null" />
     <MESSAGE value="CreateCinemaTest added, isCinemaPresent() method implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="CreateCinemaTest added, isCinemaPresent() method implemented" />
+    <MESSAGE value="CreateCinemaTest refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="CreateCinemaTest refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -933,13 +934,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/ShowsCalendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateShowsCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -968,13 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/MovieFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/ui/ShowController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1000,13 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPQLMovieFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1264,8 +1244,8 @@
         <state relative-caret-position="119">
           <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
-            <element signature="e#1417#1418#0" expanded="true" />
-            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1275,8 +1255,8 @@
         <state relative-caret-position="183">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="false" />
+            <element signature="e#626#627#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1286,7 +1266,7 @@
         <state relative-caret-position="374">
           <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1339,10 +1319,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/MovieFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/CreateCinemaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="72" column="4" lean-forward="false" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPQLMovieFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AddMovieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="51" column="58" lean-forward="false" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

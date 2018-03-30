@@ -7,4 +7,5 @@ public interface MovieFinder {
 
     List<MovieDto> getFromDay(Long cinemaId, LocalDate parse);
 
+    MovieDto get(Long movieId);
 }

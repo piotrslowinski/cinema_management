@@ -70,5 +70,5 @@ public class CreateCinemaTest extends AcceptanceTest {
         assertEquals(3, cinemaList.size());
     }
 
-    
+
 }

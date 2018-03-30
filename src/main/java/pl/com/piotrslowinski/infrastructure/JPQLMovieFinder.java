@@ -41,4 +41,12 @@ public class JPQLMovieFinder implements MovieFinder {
         List<Movie> movies = query.getResultList();
         return movies.stream().map(MovieDto::new).collect(Collectors.toList());
     }
+
+    @Override
+    public MovieDto get(Long movieId) {
+        Movie movie = entityManager.find(Movie.class, movieId);
+        if (movie == null)
+            throw new NoSuchEntityException();
+        return new MovieDto(movie);
+    }
 }
