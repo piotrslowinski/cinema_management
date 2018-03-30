@@ -81,6 +81,14 @@ public class Movie {
         return shows;
     }
 
+    public TicketPrices getTicketPrices() {
+        return ticketPrices;
+    }
+
+    public void setTicketPrices(TicketPrices ticketPrices) {
+        this.ticketPrices = ticketPrices;
+    }
+
     public void setPrices(SetTicketPricesCommand cmd) {
         if(ticketPrices != null){
             ticketPrices.setPrices(cmd.getPrices());

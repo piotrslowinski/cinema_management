@@ -1,6 +1,7 @@
 package pl.com.piotrslowinski.application;
 
 import pl.com.piotrslowinski.model.Movie;
+import pl.com.piotrslowinski.model.TicketPrices;
 
 
 import java.util.Comparator;
@@ -26,6 +27,8 @@ public class MovieDto {
 
     private List<ShowDto> shows ;
 
+    private TicketPrices ticketPrices;
+
     public MovieDto(Movie movie) {
         this.id = movie.getId();
         this.title = movie.getTitle();
@@ -38,6 +41,7 @@ public class MovieDto {
                 .map(ShowDto::new)
                 .sorted(Comparator.comparing(ShowDto::getTime))
                 .collect(Collectors.toList());
+        this.ticketPrices = movie.getTicketPrices();
     }
 
     public Long getId() {
@@ -102,5 +106,13 @@ public class MovieDto {
 
     public void setShows(List<ShowDto> shows) {
         this.shows = shows;
+    }
+
+    public TicketPrices getTicketPrices() {
+        return ticketPrices;
+    }
+
+    public void setTicketPrices(TicketPrices ticketPrices) {
+        this.ticketPrices = ticketPrices;
     }
 }
