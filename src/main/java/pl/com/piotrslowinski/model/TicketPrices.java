@@ -7,6 +7,7 @@ import javax.persistence.OneToOne;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 @Embeddable
 public class TicketPrices {
@@ -40,5 +41,23 @@ public class TicketPrices {
 
     public void setMovie(Movie movie) {
         this.movie = movie;
+    }
+
+    public Receipt calculatePrice(Set<Ticket> tickets) {
+        Receipt receipt = new Receipt();
+        for (Ticket ticket: tickets){
+            if (!getTicketPrice(ticket.getKind()).equals(TICKET_KIND_NOT_EXIST)){
+                receipt.addReceiptLine(ticket.getKind(), ticket.getCount(), getTicketPrice(ticket.getKind()));
+            }
+        }
+
+        receipt.calculateTotalPrice();
+        return receipt;
+    }
+
+    private BigDecimal getTicketPrice(String kind) {
+        if(prices.containsKey(kind))
+            return prices.get(kind);
+        return TICKET_KIND_NOT_EXIST;
     }
 }

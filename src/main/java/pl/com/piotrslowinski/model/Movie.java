@@ -97,4 +97,8 @@ public class Movie {
         }
 
     }
+
+    public Receipt calculatePrice(Set<Ticket> tickets) {
+        return ticketPrices.calculatePrice(tickets);
+    }
 }
