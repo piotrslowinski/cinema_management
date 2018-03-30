@@ -151,3 +151,66 @@ Used technologies:
 	}
 	
 ...
+
+8. As a customer You can see how much You have to pay for the selected tickets, so that You know if You want to proceed with your reservation
+
+	*POST/reservations/price_calculator*
+	
+...
+
+	{
+		"showId": 1,
+		"ticekts": [
+			{
+			"kind": "regular",
+			"count": 2
+			},
+			{
+			"kind": "school",
+			"count": 1
+			}
+		]
+	}
+	
+...
+
+	- return calculated price in following format:
+	
+...
+
+	{
+		"ticekts": [
+		{
+			"kind": "regular",
+			"count": 2,
+			"unitPrice": 10.00,
+			"totalPrice": 20.00
+		},
+		{
+			"kind": "school",
+			"count": 1,
+			"unitPrice": 10.00,
+			"totalPrice": 10.00
+		}
+		],
+		"totalPrice": 30.00
+	}
+	
+...
+
+9. As a customer You can see which seats are available for a given show, so that You can pick up seats that You like
+
+	*GET/shows/:showId/seats*
+	
+...
+
+	{
+		"free": [
+		 {"row": 1, "seat": 1}, {"row": 1, "seat": 2}, ...
+		],
+		"occupied": [
+		 {"row": 2, "seat": 2}, {"row": 1, "seat": 3}, ...
+		]
+	}
+	
+...
