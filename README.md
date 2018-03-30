@@ -214,3 +214,8 @@ Used technologies:
 	}
 	
 ...
+
+10. As a cashier You can browse the list of reservations, so that You can accept payment
+
+	*GET/reservations?query=q&status=s*
+	

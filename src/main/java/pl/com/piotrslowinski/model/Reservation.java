@@ -3,6 +3,7 @@ package pl.com.piotrslowinski.model;
 import pl.com.piotrslowinski.model.commands.CreateReservationCommand;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.util.Set;
 
 @Entity
@@ -26,6 +27,7 @@ public class Reservation {
 
     @Enumerated(EnumType.STRING)
     private ReservationStatus reservationStatus;
+    private BigDecimal totalCost;
 
     public Reservation() {
     }
@@ -84,5 +86,9 @@ public class Reservation {
 
     public void setReservationStatus(ReservationStatus reservationStatus) {
         this.reservationStatus = reservationStatus;
+    }
+
+    public BigDecimal getTotalCost() {
+        return totalCost;
     }
 }
