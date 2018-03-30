@@ -24,4 +24,6 @@ public class CreateCinemaCommand implements Command {
         validatePresence(errors, "name", name);
         validatePresence(errors, "city", city);
     }
+
+
 }

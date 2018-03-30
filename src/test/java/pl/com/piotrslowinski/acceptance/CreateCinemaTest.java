@@ -15,6 +15,7 @@ import pl.com.piotrslowinski.model.commands.InvalidCommandException;
 import java.util.List;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
+import static org.junit.Assert.assertEquals;
 
 
 @SpringBootTest
@@ -29,17 +30,18 @@ public class CreateCinemaTest extends AcceptanceTest {
 
     private CreateCinemaCommand createCinemaCommand;
 
-    @Before
-    public void createCinema(){
+
+    public void createCinema(String city, String name){
         createCinemaCommand = new CreateCinemaCommand();
-        createCinemaCommand.setCity("Lublin");
-        createCinemaCommand.setName("Plaza");
+        createCinemaCommand.setCity(city);
+        createCinemaCommand.setName(name);
+        createCinemaHandler.handle(createCinemaCommand);
     }
 
     @Test
     public void shouldCreateCinema(){
         //when
-        createCinemaHandler.handle(createCinemaCommand);
+        createCinema("Lublin", "Plaza");
 
         //then
         CinemaDto cinemaDto = cinemaFinder.getAll().get(0);
@@ -50,10 +52,23 @@ public class CreateCinemaTest extends AcceptanceTest {
     @Test(expected = InvalidCommandException.class)
     public void shouldNotAllowToPersistTheSameCinemaTwice(){
         //given
-        createCinemaHandler.handle(createCinemaCommand);
+        createCinema("Lublin", "Olimp");
 
         //when
-        createCinemaHandler.handle(createCinemaCommand);
+        createCinema("Lublin", "Olimp");
 
     }
+
+    @Test
+    public void shouldSaveCinemasAsList(){
+        createCinema("Lublin","Olimp");
+        createCinema("Lublin", "Plaza");
+        createCinema("Warszawa", "Syrenka");
+
+        //then
+        List<CinemaDto> cinemaList = cinemaFinder.getAll();
+        assertEquals(3, cinemaList.size());
+    }
+
+    
 }
