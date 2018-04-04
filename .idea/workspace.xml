@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86d5fd9f-e77d-420b-b2ee-b75e5025dea7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/StripePaymentFacade.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/CreditCardData.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentFacade.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentStatus.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentType.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/PaymentCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/PaymentHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentTransaction.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/infrastructure/FindCinemasTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/infrastructure/InfrastructureTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/cinema_management.iml" afterPath="$PROJECT_DIR$/cinema_management.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/StripePaymentFacade.java" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/StripePaymentFacade.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Reservation.java" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Reservation.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,15 +23,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReservationController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/ui/ReservationController.java">
+      <file leaf-file-name="PaymentStatus.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+            <state relative-caret-position="153">
+              <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
-                <element signature="e#1034#1035#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-                <element signature="e#1222#1223#0" expanded="true" />
+                <element signature="e#193#194#0" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreditCardData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/CreditCardData.java">
+      <file leaf-file-name="PaymentHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/PaymentHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="34">
+              <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -74,30 +79,9 @@
       <file leaf-file-name="PaymentType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-              <folding>
-                <element signature="e#128#129#0" expanded="true" />
-                <element signature="e#160#161#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentStatus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-              <folding>
-                <element signature="e#193#194#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#390#391#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,86 +89,43 @@
       <file leaf-file-name="StripePaymentFacade.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/StripePaymentFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="248">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JPQLReservationFinder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPQLReservationFinder.java">
+      <file leaf-file-name="PaymentTransaction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentTransaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+            <state relative-caret-position="1037">
+              <caret line="89" column="1" lean-forward="false" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReservationDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/ReservationDto.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1121#1122#0" expanded="true" />
-                <element signature="e#1163#1164#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1239#1240#0" expanded="true" />
-                <element signature="e#1266#1267#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
-                <element signature="e#1347#1348#0" expanded="true" />
-                <element signature="e#1389#1390#0" expanded="true" />
-                <element signature="e#1417#1418#0" expanded="true" />
-                <element signature="e#1469#1470#0" expanded="true" />
-                <element signature="e#1503#1504#0" expanded="true" />
-                <element signature="e#1555#1556#0" expanded="true" />
-                <element signature="e#1585#1586#0" expanded="true" />
-                <element signature="e#1649#1650#0" expanded="true" />
-                <element signature="e#1687#1688#0" expanded="true" />
-                <element signature="e#1722#1723#0" expanded="true" />
-                <element signature="e#1750#1751#0" expanded="true" />
-                <element signature="e#1795#1796#0" expanded="true" />
-                <element signature="e#1829#1830#0" expanded="true" />
-                <element signature="e#1869#1870#0" expanded="true" />
-                <element signature="e#1900#1901#0" expanded="true" />
-                <element signature="e#1953#1954#0" expanded="true" />
-                <element signature="e#1993#1994#0" expanded="true" />
-                <element signature="e#2037#2038#0" expanded="true" />
-                <element signature="e#2066#2067#0" expanded="true" />
-                <element signature="e#2121#2122#0" expanded="true" />
-                <element signature="e#2157#2158#0" expanded="true" />
-                <element signature="e#2198#2199#0" expanded="true" />
-                <element signature="e#2231#2232#0" expanded="true" />
-                <element signature="e#2287#2288#0" expanded="true" />
-                <element signature="e#2331#2332#0" expanded="true" />
-                <element signature="e#2642#2643#0" expanded="true" />
-                <element signature="e#2675#2676#0" expanded="true" />
-                <element signature="e#2713#2714#0" expanded="true" />
-                <element signature="e#2749#2750#0" expanded="true" />
-                <element signature="e#2791#2792#0" expanded="true" />
-                <element signature="e#2826#2827#0" expanded="true" />
-                <element signature="e#2877#2878#0" expanded="true" />
-                <element signature="e#2917#2918#0" expanded="true" />
-                <element signature="e#3188#3189#0" expanded="true" />
-                <element signature="e#3221#3222#0" expanded="true" />
-                <element signature="e#3259#3260#0" expanded="true" />
-                <element signature="e#3295#3296#0" expanded="true" />
-                <element signature="e#3331#3332#0" expanded="true" />
-                <element signature="e#3367#3368#0" expanded="true" />
-                <element signature="e#3413#3414#0" expanded="true" />
-                <element signature="e#3455#3456#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Show.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Show.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="64" column="32" lean-forward="true" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -192,10 +133,11 @@
       <file leaf-file-name="Reservation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Reservation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="90" column="38" lean-forward="false" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
+            <state relative-caret-position="214">
+              <caret line="37" column="54" lean-forward="true" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
               <folding>
-                <element signature="e#1955#1956#0" expanded="true" />
+                <element signature="e#2171#2172#0" expanded="true" />
+                <element signature="e#2221#2222#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -228,14 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/ui/MovieController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/SetTicketPricesCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/ReservationNumberDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateReservationCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/CommandGateway.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/Handler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/CreateMovieHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/CreateShowsHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/SetTicketPricesHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/repositories/ReservationRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPAReservationRepository.java" />
@@ -269,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/ReservationQuery.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/ReservationFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPQLReservationFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Reservation.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/ReservationDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/ui/ReservationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentStatus.java" />
@@ -278,7 +211,16 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/PaymentCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/StripePaymentFacade.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/infrastructure/InfrastructureTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/FindCienemasTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/infrastructure/FindCienemasTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/infrastructure/FindCinemasTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/infrastructure/FindAllMoviesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/ShowTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentTransaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/StripePaymentFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Reservation.java" />
       </list>
     </option>
   </component>
@@ -327,8 +269,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -524,6 +464,17 @@
               <item name="cinema_management" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="piotrslowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="infrastructure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinema_management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cinema_management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -531,6 +482,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -563,7 +516,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CinemaApp">
+  <component name="RunManager" selected="JUnit.FindCinemasTest.shouldReturnNoCinemaWhenDbIsEmpty">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -603,35 +556,10 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="AddMovieTest.shouldAddMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="pl.com.piotrslowinski.acceptance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="cinema_management" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.com.piotrslowinski.acceptance" />
-      <option name="MAIN_CLASS_NAME" value="pl.com.piotrslowinski.acceptance.AddMovieTest" />
-      <option name="METHOD_NAME" value="shouldAddMovie" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="AddTicketPricesTest.shouldAddTicketPrices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="pl.com.piotrslowinski.acceptance.*" />
+          <option name="PATTERN" value="pl.com.piotrslowinski.infrastructure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -653,20 +581,20 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CreateCinemaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindCinemasTest.shouldFindCinema" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="pl.com.piotrslowinski.acceptance.*" />
+          <option name="PATTERN" value="pl.com.piotrslowinski.infrastructure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="cinema_management" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.com.piotrslowinski.acceptance" />
-      <option name="MAIN_CLASS_NAME" value="pl.com.piotrslowinski.acceptance.CreateCinemaTest" />
-      <option name="METHOD_NAME" value="shouldNotAllowToPersistTheSameCinemaTwice" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="pl.com.piotrslowinski.infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="pl.com.piotrslowinski.infrastructure.FindCinemasTest" />
+      <option name="METHOD_NAME" value="shouldFindCinema" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -678,19 +606,44 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CreateCinemaTest.shouldNotAllowToPersistEmptyParametersAtCinema" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindCinemasTest.shouldReturnAllCinemas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="pl.com.piotrslowinski.acceptance.*" />
+          <option name="PATTERN" value="pl.com.piotrslowinski.infrastructure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="cinema_management" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.com.piotrslowinski.acceptance" />
-      <option name="MAIN_CLASS_NAME" value="pl.com.piotrslowinski.acceptance.CreateCinemaTest" />
-      <option name="METHOD_NAME" value="shouldNotAllowToPersistEmptyParametersAtCinema" />
+      <option name="PACKAGE_NAME" value="pl.com.piotrslowinski.infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="pl.com.piotrslowinski.infrastructure.FindCinemasTest" />
+      <option name="METHOD_NAME" value="shouldReturnAllCinemas" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="FindCinemasTest.shouldReturnNoCinemaWhenDbIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="pl.com.piotrslowinski.infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="cinema_management" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pl.com.piotrslowinski.infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="pl.com.piotrslowinski.infrastructure.FindCinemasTest" />
+      <option name="METHOD_NAME" value="shouldReturnNoCinemaWhenDbIsEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -764,19 +717,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldNotAllowToPersistEmptyParametersAtCinema" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AddMovieTest.shouldAddMovie" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AddTicketPricesTest.shouldAddTicketPrices" />
-      <item index="4" class="java.lang.String" itemvalue="Application.CinemaApp" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AddTicketPricesTest.shouldAddTicketPrices" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CinemaApp" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FindCinemasTest.shouldFindCinema" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FindCinemasTest.shouldReturnAllCinemas" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FindCinemasTest.shouldReturnNoCinemaWhenDbIsEmpty" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.CinemaApp" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AddTicketPricesTest.shouldAddTicketPrices" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AddMovieTest.shouldAddMovie" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest.shouldNotAllowToPersistEmptyParametersAtCinema" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CreateCinemaTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FindCinemasTest.shouldReturnNoCinemaWhenDbIsEmpty" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FindCinemasTest.shouldReturnAllCinemas" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FindCinemasTest.shouldFindCinema" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CinemaApp" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AddTicketPricesTest.shouldAddTicketPrices" />
       </list>
     </recent_temporary>
   </component>
@@ -941,39 +894,46 @@
       <option name="project" value="LOCAL" />
       <updated>1522432109563</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="PaymentFacade added without implementation">
+      <created>1522481342266</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1522481342266</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddMovieTest_shouldAddMovie - 2018.03.30 at 07h 34m 41s.xml">
-      <configuration name="AddMovieTest.shouldAddMovie" configurationId="JUnit" />
+    <history-entry file="FindCienemasTest_shouldFindCinema - 2018.04.04 at 19h 22m 50s.xml">
+      <configuration name="FindCienemasTest.shouldFindCinema" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddMovieTest_shouldAddMovie - 2018.03.30 at 07h 35m 18s.xml">
-      <configuration name="AddMovieTest.shouldAddMovie" configurationId="JUnit" />
+    <history-entry file="FindCienemasTest_shouldFindCinema - 2018.04.04 at 19h 23m 49s.xml">
+      <configuration name="FindCienemasTest.shouldFindCinema" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddMovieTest_shouldAddMovie - 2018.03.30 at 07h 35m 44s.xml">
-      <configuration name="AddMovieTest.shouldAddMovie" configurationId="JUnit" />
+    <history-entry file="FindCienemasTest_shouldFindCinema - 2018.04.04 at 19h 24m 42s.xml">
+      <configuration name="FindCienemasTest.shouldFindCinema" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddMovieTest_shouldAddMovie - 2018.03.30 at 07h 38m 50s.xml">
-      <configuration name="AddMovieTest.shouldAddMovie" configurationId="JUnit" />
+    <history-entry file="FindCienemasTest_shouldFindCinema - 2018.04.04 at 19h 26m 03s.xml">
+      <configuration name="FindCienemasTest.shouldFindCinema" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddTicketPricesTest_shouldAddTicketPrices - 2018.03.30 at 07h 55m 20s.xml">
-      <configuration name="AddTicketPricesTest.shouldAddTicketPrices" configurationId="JUnit" />
+    <history-entry file="FindCienemasTest_shouldFindCinema - 2018.04.04 at 19h 26m 19s.xml">
+      <configuration name="FindCienemasTest.shouldFindCinema" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateCinemaTest - 2018.03.30 at 06h 44m 21s.xml">
-      <configuration name="CreateCinemaTest" configurationId="JUnit" />
+    <history-entry file="FindCinemasTest_shouldFindCinema - 2018.04.04 at 19h 31m 44s.xml">
+      <configuration name="FindCinemasTest.shouldFindCinema" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateCinemaTest_shouldCreateCinema - 2018.03.30 at 06h 37m 28s.xml">
-      <configuration name="CreateCinemaTest.shouldCreateCinema" configurationId="JUnit" />
+    <history-entry file="FindCinemasTest_shouldFindCinema - 2018.04.04 at 19h 32m 18s.xml">
+      <configuration name="FindCinemasTest.shouldFindCinema" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateCinemaTest_shouldNotAllowToPersistEmptyParametersAtCinema - 2018.03.30 at 06h 46m 35s.xml">
-      <configuration name="CreateCinemaTest.shouldNotAllowToPersistEmptyParametersAtCinema" configurationId="JUnit" />
+    <history-entry file="FindCinemasTest_shouldReturnAllCinemas - 2018.04.04 at 19h 34m 55s.xml">
+      <configuration name="FindCinemasTest.shouldReturnAllCinemas" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateCinemaTest_shouldNotAllowToPersistTheSameCinemaTwice - 2018.03.30 at 06h 38m 39s.xml">
-      <configuration name="CreateCinemaTest.shouldNotAllowToPersistTheSameCinemaTwice" configurationId="JUnit" />
+    <history-entry file="FindCinemasTest_shouldReturnNoCinemaWhenDbIsEmpty - 2018.04.04 at 19h 36m 39s.xml">
+      <configuration name="FindCinemasTest.shouldReturnNoCinemaWhenDbIsEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateCinemaTest_shouldSaveCinemasAsList - 2018.03.30 at 06h 43m 50s.xml">
-      <configuration name="CreateCinemaTest.shouldSaveCinemasAsList" configurationId="JUnit" />
+    <history-entry file="FindCinemasTest_shouldReturnNoCinemaWhenDbIsEmpty - 2018.04.04 at 19h 37m 01s.xml">
+      <configuration name="FindCinemasTest.shouldReturnNoCinemaWhenDbIsEmpty" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -982,6 +942,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -992,7 +953,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2987897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30786687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1003,7 +964,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1059,7 +1019,8 @@
     <MESSAGE value="calculateTotalPrice for tickets works" />
     <MESSAGE value="Seats availability works, CinemaHallDto added" />
     <MESSAGE value="reservation search implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="reservation search implemented" />
+    <MESSAGE value="PaymentFacade added without implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="PaymentFacade added without implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1077,62 +1038,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="543" column="6" lean-forward="false" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/repositories/CinemaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPACinemaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AcceptanceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateCinemaCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/Validatable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/CommandGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/CinemaApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1154,13 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/CreateCinemaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPQLMovieFinder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1176,20 +1074,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AddTicketsPricesTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AddTicketPricesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="54" column="62" lean-forward="true" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AddMovieTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="51" column="58" lean-forward="false" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Cinema.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1265,24 +1149,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Show.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="64" column="32" lean-forward="true" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="101" column="40" lean-forward="true" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
           <folding>
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#1803#1804#0" expanded="true" />
-            <element signature="e#1851#1852#0" expanded="true" />
-            <element signature="e#2149#2150#0" expanded="true" />
-            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#1706#1707#0" expanded="false" />
+            <element signature="e#1741#1742#0" expanded="false" />
+            <element signature="e#1803#1804#0" expanded="false" />
+            <element signature="e#1851#1852#0" expanded="false" />
+            <element signature="e#2149#2150#0" expanded="false" />
+            <element signature="e#2208#2209#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1334,14 +1211,14 @@
         <state relative-caret-position="68">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="false" />
+            <element signature="e#615#616#0" expanded="false" />
+            <element signature="e#643#644#0" expanded="false" />
+            <element signature="e#670#671#0" expanded="false" />
+            <element signature="e#699#700#0" expanded="false" />
+            <element signature="e#727#728#0" expanded="false" />
+            <element signature="e#764#765#0" expanded="false" />
+            <element signature="e#792#793#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1351,7 +1228,7 @@
         <state relative-caret-position="153">
           <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="e#813#814#0" expanded="false" />
             <element signature="e#840#841#0" expanded="false" />
             <element signature="e#883#884#0" expanded="false" />
@@ -1368,11 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="23" column="61" lean-forward="false" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
-          <folding>
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1389,151 +1261,95 @@
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Receipt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#1641#1642#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#1720#1721#0" expanded="true" />
-            <element signature="e#1760#1761#0" expanded="true" />
-            <element signature="e#1797#1798#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1880#1881#0" expanded="true" />
-            <element signature="e#1922#1923#0" expanded="true" />
-            <element signature="e#1966#1967#0" expanded="true" />
-            <element signature="e#2006#2007#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2114#2115#0" expanded="true" />
-            <element signature="e#2159#2160#0" expanded="true" />
-            <element signature="e#2200#2201#0" expanded="true" />
-            <element signature="e#2260#2261#0" expanded="true" />
-            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="false" />
+            <element signature="e#429#430#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#505#506#0" expanded="false" />
+            <element signature="e#549#550#0" expanded="false" />
+            <element signature="e#578#579#0" expanded="false" />
+            <element signature="e#633#634#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPQLReservationFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="612">
           <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Reservation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="90" column="38" lean-forward="false" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
-          <folding>
-            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#748#749#0" expanded="false" />
+            <element signature="e#798#799#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/ReservationDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="646">
           <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1389#1390#0" expanded="true" />
-            <element signature="e#1417#1418#0" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#1649#1650#0" expanded="true" />
-            <element signature="e#1687#1688#0" expanded="true" />
-            <element signature="e#1722#1723#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#1829#1830#0" expanded="true" />
-            <element signature="e#1869#1870#0" expanded="true" />
-            <element signature="e#1900#1901#0" expanded="true" />
-            <element signature="e#1953#1954#0" expanded="true" />
-            <element signature="e#1993#1994#0" expanded="true" />
-            <element signature="e#2037#2038#0" expanded="true" />
-            <element signature="e#2066#2067#0" expanded="true" />
-            <element signature="e#2121#2122#0" expanded="true" />
-            <element signature="e#2157#2158#0" expanded="true" />
-            <element signature="e#2198#2199#0" expanded="true" />
-            <element signature="e#2231#2232#0" expanded="true" />
-            <element signature="e#2287#2288#0" expanded="true" />
-            <element signature="e#2331#2332#0" expanded="true" />
-            <element signature="e#2642#2643#0" expanded="true" />
-            <element signature="e#2675#2676#0" expanded="true" />
-            <element signature="e#2713#2714#0" expanded="true" />
-            <element signature="e#2749#2750#0" expanded="true" />
-            <element signature="e#2791#2792#0" expanded="true" />
-            <element signature="e#2826#2827#0" expanded="true" />
-            <element signature="e#2877#2878#0" expanded="true" />
-            <element signature="e#2917#2918#0" expanded="true" />
-            <element signature="e#3188#3189#0" expanded="true" />
-            <element signature="e#3221#3222#0" expanded="true" />
-            <element signature="e#3259#3260#0" expanded="true" />
-            <element signature="e#3295#3296#0" expanded="true" />
-            <element signature="e#3331#3332#0" expanded="true" />
-            <element signature="e#3367#3368#0" expanded="true" />
-            <element signature="e#3413#3414#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1121#1122#0" expanded="false" />
+            <element signature="e#1163#1164#0" expanded="false" />
+            <element signature="e#1199#1200#0" expanded="false" />
+            <element signature="e#1239#1240#0" expanded="false" />
+            <element signature="e#1266#1267#0" expanded="false" />
+            <element signature="e#1315#1316#0" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
+            <element signature="e#1389#1390#0" expanded="false" />
+            <element signature="e#1417#1418#0" expanded="false" />
+            <element signature="e#1469#1470#0" expanded="false" />
+            <element signature="e#1503#1504#0" expanded="false" />
+            <element signature="e#1555#1556#0" expanded="false" />
+            <element signature="e#1585#1586#0" expanded="false" />
+            <element signature="e#1649#1650#0" expanded="false" />
+            <element signature="e#1687#1688#0" expanded="false" />
+            <element signature="e#1722#1723#0" expanded="false" />
+            <element signature="e#1750#1751#0" expanded="false" />
+            <element signature="e#1795#1796#0" expanded="false" />
+            <element signature="e#1829#1830#0" expanded="false" />
+            <element signature="e#1869#1870#0" expanded="false" />
+            <element signature="e#1900#1901#0" expanded="false" />
+            <element signature="e#1953#1954#0" expanded="false" />
+            <element signature="e#1993#1994#0" expanded="false" />
+            <element signature="e#2037#2038#0" expanded="false" />
+            <element signature="e#2066#2067#0" expanded="false" />
+            <element signature="e#2121#2122#0" expanded="false" />
+            <element signature="e#2157#2158#0" expanded="false" />
+            <element signature="e#2198#2199#0" expanded="false" />
+            <element signature="e#2231#2232#0" expanded="false" />
+            <element signature="e#2287#2288#0" expanded="false" />
+            <element signature="e#2331#2332#0" expanded="false" />
+            <element signature="e#2642#2643#0" expanded="false" />
+            <element signature="e#2675#2676#0" expanded="false" />
+            <element signature="e#2713#2714#0" expanded="false" />
+            <element signature="e#2749#2750#0" expanded="false" />
+            <element signature="e#2791#2792#0" expanded="false" />
+            <element signature="e#2826#2827#0" expanded="false" />
+            <element signature="e#2877#2878#0" expanded="false" />
+            <element signature="e#2917#2918#0" expanded="false" />
+            <element signature="e#3188#3189#0" expanded="false" />
+            <element signature="e#3221#3222#0" expanded="false" />
+            <element signature="e#3259#3260#0" expanded="false" />
+            <element signature="e#3295#3296#0" expanded="false" />
+            <element signature="e#3331#3332#0" expanded="false" />
+            <element signature="e#3367#3368#0" expanded="false" />
+            <element signature="e#3413#3414#0" expanded="false" />
+            <element signature="e#3455#3456#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/ui/ReservationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+        <state relative-caret-position="493">
+          <caret line="35" column="56" lean-forward="false" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
           <folding>
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding>
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="false" />
+            <element signature="e#1077#1078#0" expanded="false" />
+            <element signature="e#1222#1223#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1546,11 +1362,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AddTicketPricesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="54" column="62" lean-forward="true" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/infrastructure/InfrastructureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/infrastructure/FindAllMoviesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/infrastructure/FindCinemasTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="62" lean-forward="false" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AcceptanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/CreateCinemaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/AddMovieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="51" column="58" lean-forward="false" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/acceptance/ShowTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Receipt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Show.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="64" column="32" lean-forward="true" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentFacade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Reservation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="37" column="54" lean-forward="true" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+          <folding>
+            <element signature="e#2171#2172#0" expanded="true" />
+            <element signature="e#2221#2222#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1568,29 +1510,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentStatus.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/PaymentHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="34">
+          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/PaymentTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="89" column="1" lean-forward="false" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
           <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/StripePaymentFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="248">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -17,7 +17,7 @@ public class Reservation {
     private Long showId;
 
     @Embedded
-    private Customer Customer;
+    private Customer customer;
 
     @ElementCollection
     private Set<Ticket> tickets;
@@ -29,12 +29,15 @@ public class Reservation {
     private ReservationStatus reservationStatus;
     private BigDecimal totalCost;
 
+    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH} )
+    private Set<PaymentTransaction> transactions;
+
     public Reservation() {
     }
 
     public Reservation(CreateReservationCommand cmd) {
         this.showId = cmd.getShowId();
-        Customer = cmd.getCustomer();
+        this.customer = cmd.getCustomer();
         this.tickets = cmd.getTickets();
         this.seats = cmd.getSeats();
         this.reservationStatus = ReservationStatus.PENDING;
@@ -57,11 +60,11 @@ public class Reservation {
     }
 
     public Customer getCustomer() {
-        return Customer;
+        return customer;
     }
 
     public void setCustomer(Customer customer) {
-        Customer = customer;
+        this.customer = customer;
     }
 
     public Set<Ticket> getTickets() {
@@ -90,5 +93,9 @@ public class Reservation {
 
     public BigDecimal getTotalCost() {
         return totalCost;
+    }
+
+    public void addTransaction(PaymentTransaction transaction) {
+        this.transactions.add(transaction);
     }
 }
