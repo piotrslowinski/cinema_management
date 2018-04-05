@@ -3,6 +3,7 @@ package pl.com.piotrslowinski.infrastructure;
 import com.stripe.Stripe;
 import com.stripe.exception.*;
 import com.stripe.model.Charge;
+import org.springframework.stereotype.Component;
 import pl.com.piotrslowinski.model.PaymentFacade;
 import pl.com.piotrslowinski.model.PaymentStatus;
 import pl.com.piotrslowinski.model.PaymentTransaction;
@@ -14,6 +15,7 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class StripePaymentFacade implements PaymentFacade {
 
 
@@ -59,7 +61,7 @@ public class StripePaymentFacade implements PaymentFacade {
 
     private Map<String, Object> createChargeParams(Reservation reservation, String token) {
         Map<String, Object> chargeParams = new HashMap<>();
-        chargeParams.put("amount", reservation.getTotalCost().multiply(BigDecimal.valueOf(100)).intValue()); //kwota musi być pdana w centach i być całkowita
+        chargeParams.put("amount", reservation.getTotalCost().multiply(BigDecimal.valueOf(100)).intValue()); //amount must be integer in cents
         chargeParams.put("currency", "usd");
         chargeParams.put("description", " Payment for reservation number: " + reservation.getId());
         chargeParams.put("capture", true);

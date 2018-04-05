@@ -2,9 +2,12 @@ package pl.com.piotrslowinski.ui;
 
 import org.springframework.web.bind.annotation.*;
 import pl.com.piotrslowinski.application.*;
+import pl.com.piotrslowinski.model.PaymentFacade;
+import pl.com.piotrslowinski.model.PaymentStatus;
 import pl.com.piotrslowinski.model.Receipt;
 import pl.com.piotrslowinski.model.commands.CalculatePricesCommand;
 import pl.com.piotrslowinski.model.commands.CreateReservationCommand;
+import pl.com.piotrslowinski.model.commands.PaymentCommand;
 
 import java.util.List;
 
@@ -35,6 +38,12 @@ public class ReservationController {
     @GetMapping("/reservations")
     List<ReservationDto> search(ReservationQuery query){
         return reservationFinder.search(query);
+    }
+
+    @PutMapping("/reservations/{reservationNumber}/payment")
+    public PaymentStatus pay(@PathVariable Long reservationNumber, @RequestBody PaymentCommand cmd){
+        cmd.setReservationNumber(reservationNumber);
+        return gateway.execute(cmd);
     }
 }
 

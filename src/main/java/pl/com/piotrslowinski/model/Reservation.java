@@ -35,12 +35,13 @@ public class Reservation {
     public Reservation() {
     }
 
-    public Reservation(CreateReservationCommand cmd) {
+    public Reservation(CreateReservationCommand cmd, BigDecimal totalCost) {
         this.showId = cmd.getShowId();
         this.customer = cmd.getCustomer();
         this.tickets = cmd.getTickets();
         this.seats = cmd.getSeats();
         this.reservationStatus = ReservationStatus.PENDING;
+        this.totalCost = totalCost;
     }
 
     public Long getId() {
@@ -97,5 +98,13 @@ public class Reservation {
 
     public void addTransaction(PaymentTransaction transaction) {
         this.transactions.add(transaction);
+    }
+
+    public void markAsPaymentFailed() {
+        this.reservationStatus = ReservationStatus.PAYMENT_FAILED;
+    }
+
+    public void markAsPaid() {
+        this.reservationStatus = ReservationStatus.PAID;
     }
 }
