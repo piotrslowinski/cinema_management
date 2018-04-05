@@ -36,6 +36,7 @@ public class Movie {
 
     @Embedded
     private TicketPrices ticketPrices;
+    private SetTicketPricesCommand ticketPricess;
 
     public Movie(String title, String description, Set<String> actors, Set<String> genres, Integer minAge, Integer length) {
         this.title = title;
@@ -101,4 +102,6 @@ public class Movie {
     public Receipt calculatePrice(Set<Ticket> tickets) {
         return ticketPrices.calculatePrice(tickets);
     }
+
+
 }

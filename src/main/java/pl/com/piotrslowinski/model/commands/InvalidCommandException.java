@@ -8,7 +8,7 @@ public class InvalidCommandException extends RuntimeException {
         this.errors = errors;
     }
 
-    Validatable.ValidationErrors getErrors(){
+    public Validatable.ValidationErrors getErrors(){
         return errors;
     }
 }
