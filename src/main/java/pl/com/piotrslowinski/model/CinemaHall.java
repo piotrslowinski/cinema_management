@@ -1,5 +1,8 @@
 package pl.com.piotrslowinski.model;
 
+import pl.com.piotrslowinski.model.commands.CreateReservationCommand;
+import pl.com.piotrslowinski.model.commands.Validatable;
+
 import java.util.Set;
 
 public class CinemaHall {
@@ -32,5 +35,10 @@ public class CinemaHall {
 
     public boolean[][] getSeats() {
         return seats;
+    }
+
+    public void checkReservation(CreateReservationCommand cmd) {
+        Validatable.ValidationErrors errors = new Validatable.ValidationErrors();
+        //TODO
     }
 }

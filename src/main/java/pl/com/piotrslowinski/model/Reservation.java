@@ -27,6 +27,7 @@ public class Reservation {
 
     @Enumerated(EnumType.STRING)
     private ReservationStatus reservationStatus;
+
     private BigDecimal totalCost;
 
     @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH} )
@@ -106,5 +107,9 @@ public class Reservation {
 
     public void markAsPaid() {
         this.reservationStatus = ReservationStatus.PAID;
+    }
+
+    public void setTransactions(Set<PaymentTransaction> transactions) {
+        this.transactions = transactions;
     }
 }
