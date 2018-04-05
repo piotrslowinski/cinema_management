@@ -219,3 +219,23 @@ Used technologies:
 
 	*GET/reservations?query=q&status=s*
 	
+	
+11. As a customer You can pay for the ticket by a credit card, so that You can receive the tickets
+
+	*PUT/reservations/:reservationNumber/payment*
+	
+	- app accepts following json:
+	
+...
+
+	{
+	"type": "credit_card",
+	"creditCard": {
+		"number": "4111111111111111",
+		"expirationMonth": 10,
+		"expirationYear": 2017,
+		"cvc": 123
+		}
+	}
+	
+...
