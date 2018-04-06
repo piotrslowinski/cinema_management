@@ -61,7 +61,7 @@ public class CreateShowsCommand implements Command {
             errors.add("dates & calendar", "enter dates or calendar, not both");
         }
 
-        if(dates == null && dates.isEmpty()){
+        if(dates != null && dates.isEmpty()){
             errors.add("dates", "dates can't be empty");
         }
 

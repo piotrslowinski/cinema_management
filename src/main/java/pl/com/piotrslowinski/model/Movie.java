@@ -36,7 +36,7 @@ public class Movie {
 
     @Embedded
     private TicketPrices ticketPrices;
-    private SetTicketPricesCommand ticketPricess;
+
 
     public Movie(String title, String description, Set<String> actors, Set<String> genres, Integer minAge, Integer length) {
         this.title = title;

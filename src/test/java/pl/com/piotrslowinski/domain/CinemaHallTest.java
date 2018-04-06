@@ -1,5 +1,6 @@
 package pl.com.piotrslowinski.domain;
 
+import org.assertj.core.data.MapEntry;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -57,7 +58,7 @@ public class CinemaHallTest {
         try {
             sut.checkReservation(command);
         } catch (InvalidCommandException e) {
-            assertThat(e.getErrors().getErrors()).contains(entry("Seats", "The seats next to each other are available in a other row "));
+            assertThat(e.getErrors().getErrors()).contains(new MapEntry[]{entry("Seats", "The seats next to each other are available in a other row ")});
         }
     }
 
@@ -114,7 +115,7 @@ public class CinemaHallTest {
         try {
             sut.checkReservation(command);
         } catch (InvalidCommandException e) {
-            assertThat(e.getErrors().getErrors()).contains(entry("Seat no " + seat1.getSeat() + " in row " + seat1.getRow() + " ", "is already reserved "));
+            assertThat(e.getErrors().getErrors()).contains(new MapEntry[]{entry("Seat no " + seat1.getSeat() + " in row " + seat1.getRow() + " ", "is already reserved ")});
         }
     }
 

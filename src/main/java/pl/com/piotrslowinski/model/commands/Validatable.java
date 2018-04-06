@@ -7,33 +7,31 @@ import java.util.Set;
 
 public interface Validatable {
 
-    void validate(ValidationErrors errors);
 
-    class ValidationErrors{
+    class ValidationErrors {
 
-        private Map<String, String> errors = new HashMap<>();
+        private Map<String, Set<String>> errors = new HashMap<>();
 
-        public void add(String fieldName, String errorMessage){
-           errors.put(fieldName, errorMessage);
+        public void add(String fieldName, String errorMessage) {
+            Set<String> fieldErrors = errors.getOrDefault(fieldName, new HashSet<>());
+            fieldErrors.add(errorMessage);
+            errors.putIfAbsent(fieldName, fieldErrors);
         }
 
-        public boolean isValid(){
+
+        public boolean isValid() {
             return errors.isEmpty();
         }
 
-        public Map<String, String> getErrors() {
-            return errors;
+        public Map<String, Set<String>> getErrors() {
+            return new HashMap<>(errors);
         }
 
-        public void setErrors(Map<String, String> errors) {
-            this.errors = errors;
-        }
-        public String getMessage() {
-            return String.format("Invalid request parameters");
-        }
     }
 
-    default boolean isEmpty(String s){
+    default boolean isEmpty(String s) {
         return s == null || s.trim().length() == 0;
     }
+
 }
+

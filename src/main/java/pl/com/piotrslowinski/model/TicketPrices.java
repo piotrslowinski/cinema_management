@@ -46,8 +46,10 @@ public class TicketPrices {
     public Receipt calculatePrice(Set<Ticket> tickets) {
         Receipt receipt = new Receipt();
         for (Ticket ticket: tickets){
-            if (!getTicketPrice(ticket.getKind()).equals(TICKET_KIND_NOT_EXIST)){
-                receipt.addReceiptLine(ticket.getKind(), ticket.getCount(), getTicketPrice(ticket.getKind()));
+            if(ticket.getCount() != null) {
+                if (!getTicketPrice(ticket.getKind()).equals(TICKET_KIND_NOT_EXIST)) {
+                    receipt.addReceiptLine(ticket.getKind(), ticket.getCount(), getTicketPrice(ticket.getKind()));
+                }
             }
         }
 

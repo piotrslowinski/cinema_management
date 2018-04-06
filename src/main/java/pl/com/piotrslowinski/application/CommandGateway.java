@@ -25,7 +25,7 @@ public class CommandGateway {
         return (T)handler.handle(command);
     }
 
-    private  void validate(Command command){
+    private void validate(Command command) {
         Validatable.ValidationErrors validationErrors = new Validatable.ValidationErrors();
         command.validate(validationErrors);
         if(!validationErrors.isValid())
@@ -34,7 +34,8 @@ public class CommandGateway {
 
     private Handler handlerFor(Command command){
         Map<String, Handler> handlers = applicationContext.getBeansOfType(Handler.class);
-        Optional<Handler> handlerFor = handlers.values().stream().filter((h) -> h.canHandle(command)).findFirst();
+        Optional<Handler> handlerFor = handlers.values().stream().
+                filter((h) -> h.canHandle(command)).findFirst();
         return handlerFor.orElseThrow( () ->
                 new IllegalArgumentException("No handler found for " + command.getClass()));
     }
