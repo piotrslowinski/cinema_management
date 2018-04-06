@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="86d5fd9f-e77d-420b-b2ee-b75e5025dea7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CalculatePricesCommand.java" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CalculatePricesCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateReservationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateReservationCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/CinemaHall.java" afterPath="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/CinemaHall.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,33 +16,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CommandGateway.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/CommandGateway.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="31" column="64" lean-forward="true" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorHandlers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/ui/ErrorHandlers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PaymentCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/PaymentCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvalidCommandException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/InvalidCommandException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -59,21 +46,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculatePricesCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CalculatePricesCommand.java">
+      <file leaf-file-name="ShowsCalendar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/ShowsCalendar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="68" column="86" lean-forward="true" selection-start-line="68" selection-start-column="86" selection-end-line="68" selection-end-column="86" />
+            <state relative-caret-position="-183">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TicketPrices.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/TicketPrices.java">
+      <file leaf-file-name="CinemaHall.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/CinemaHall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalculatePricesCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CalculatePricesCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="565">
+              <caret line="68" column="86" lean-forward="true" selection-start-line="68" selection-start-column="86" selection-end-line="68" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -99,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateReservationCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CreateReservationCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateReservationCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
+            <state relative-caret-position="1496">
               <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
               <folding />
             </state>
@@ -112,7 +109,7 @@
       <file leaf-file-name="CreateShowsCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateShowsCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-143">
+            <state relative-caret-position="265">
               <caret line="63" column="18" lean-forward="false" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
               <folding />
             </state>
@@ -181,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/PaymentHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/StripePaymentFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/application/CreateReservationHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/CinemaHall.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/Reservation.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/JPAReservationRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/com/piotrslowinski/domain/SetTicketPricesTest.java" />
@@ -197,6 +193,7 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/TicketPrices.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CalculatePricesCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateReservationCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/CinemaHall.java" />
       </list>
     </option>
   </component>
@@ -937,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523005201555</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="CreateReservationCommand validation">
+      <created>1523012452791</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1523012452791</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1034,7 +1038,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ShowFactory added, ShowsCalendar added" />
     <MESSAGE value="create shows feature works, date converters added" />
     <MESSAGE value="ShowFactory test passed" />
     <MESSAGE value="get shows from a given day works, JPQLMovieFinder MovieDto" />
@@ -1059,7 +1062,8 @@
     <MESSAGE value="SetTicketPrices validation added" />
     <MESSAGE value="CreateShows validation" />
     <MESSAGE value="ErrorsHandler added., validation works" />
-    <option name="LAST_COMMIT_MESSAGE" value="ErrorsHandler added., validation works" />
+    <MESSAGE value="CreateReservationCommand validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="CreateReservationCommand validation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1185,14 +1189,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/CinemaHall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1354,14 +1350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/ShowsCalendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/infrastructure/StripePaymentFacade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1446,16 +1434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/InvalidCommandException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#234#235#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1479,30 +1457,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateShowsCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
-          <caret line="63" column="18" lean-forward="false" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/PaymentCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/SetTicketPricesCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1540,8 +1494,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateReservationCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
+        <state relative-caret-position="1496">
           <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/CreateShowsCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="63" column="18" lean-forward="false" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/InvalidCommandException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/PaymentCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/SetTicketPricesCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/commands/ShowsCalendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/com/piotrslowinski/model/CinemaHall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
           <folding />
         </state>
       </provider>
