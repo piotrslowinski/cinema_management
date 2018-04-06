@@ -39,6 +39,7 @@ public class CalculatePricesCommand implements Command{
         validateTicketCount(errors, tickets);
         validateTicketFields(errors, tickets);
         validateTicketType(errors, tickets, "regular");
+        validateTicketType(errors, tickets, "school");
     }
 
     private void validateTicketType(Validatable.ValidationErrors errors, Set<Ticket> tickets, String type) {
