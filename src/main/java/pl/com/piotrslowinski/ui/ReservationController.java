@@ -7,8 +7,11 @@ import pl.com.piotrslowinski.model.PaymentStatus;
 import pl.com.piotrslowinski.model.Receipt;
 import pl.com.piotrslowinski.model.commands.CalculatePricesCommand;
 import pl.com.piotrslowinski.model.commands.CreateReservationCommand;
+import pl.com.piotrslowinski.model.commands.GenerateTicketsCommand;
 import pl.com.piotrslowinski.model.commands.PaymentCommand;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -44,6 +47,21 @@ public class ReservationController {
     public PaymentStatus pay(@PathVariable Long reservationNumber, @RequestBody PaymentCommand cmd){
         cmd.setReservationNumber(reservationNumber);
         return gateway.execute(cmd);
+    }
+
+    @GetMapping("reservations/{reservationNumber}/tickets")
+    public void getTickets(@PathVariable Long reservationNumber, HttpServletResponse response) throws IOException {
+        GenerateTicketsCommand cmd = new GenerateTicketsCommand();
+        cmd.setReservationNumber(reservationNumber);
+        byte[] pdfData = gateway.execute(cmd);
+        String fileName = String.format("Reservation_%d.pdf", reservationNumber);
+        response.setContentType("application/pdf");
+        response.addHeader("Content-disposition", "attachment; filename=" + fileName);
+        response.setContentLength(pdfData.length);
+        response.setContentLength(pdfData.length);
+        response.getOutputStream().write(pdfData);
+        response.getOutputStream().flush();
+
     }
 }
 
